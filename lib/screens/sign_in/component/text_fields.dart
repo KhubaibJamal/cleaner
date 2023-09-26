@@ -21,7 +21,7 @@ class _TextFieldsState extends State<TextFields> {
         child: Column(
           children: [
             buildEmailFormField(),
-            SizedBox(height: getProportionateScreenWidth(18)),
+            SizedBox(height: getProportionateScreenWidth(15)),
             buildPasswordFormField(),
           ],
         ),
@@ -39,10 +39,7 @@ class _TextFieldsState extends State<TextFields> {
           color: kGreyColor,
         ),
         hintText: "*******",
-        hintStyle: TextStyle(
-          color: const Color(0xFF928FA6),
-          fontSize: getProportionateScreenWidth(20),
-        ),
+        hintStyle: greyStyle,
         border: OutlineInputBorder(
           borderSide: const BorderSide(
             color: Color(0xFFD0D5DD),
@@ -73,10 +70,7 @@ class _TextFieldsState extends State<TextFields> {
       keyboardType: TextInputType.emailAddress,
       decoration: InputDecoration(
         hintText: "hello@example.com",
-        hintStyle: TextStyle(
-          color: const Color(0xFF928FA6),
-          fontSize: getProportionateScreenWidth(20),
-        ),
+        hintStyle: greyStyle,
         border: OutlineInputBorder(
           borderSide: const BorderSide(
             color: Color(0xFFD0D5DD),

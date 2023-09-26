@@ -15,3 +15,9 @@ final headingStyle = TextStyle(
   fontSize: getProportionateScreenWidth(20),
   fontWeight: FontWeight.bold,
 );
+
+// grey style
+final greyStyle = TextStyle(
+  color: const Color(0xFF928FA6),
+  fontSize: getProportionateScreenWidth(20),
+);
