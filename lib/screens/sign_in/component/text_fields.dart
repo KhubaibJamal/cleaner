@@ -32,67 +32,14 @@ class _TextFieldsState extends State<TextFields> {
   TextFormField buildPasswordFormField() {
     return TextFormField(
       obscureText: true,
-      keyboardType: TextInputType.visiblePassword,
-      decoration: InputDecoration(
-        suffixIcon: const Icon(
-          Icons.visibility_off,
-          color: kGreyColor,
-        ),
-        hintText: "*******",
-        hintStyle: greyStyle,
-        border: OutlineInputBorder(
-          borderSide: const BorderSide(
-            color: Color(0xFFD0D5DD),
-            width: 2.5,
-          ),
-          borderRadius: BorderRadius.circular(12),
-        ),
-        enabledBorder: OutlineInputBorder(
-          borderSide: const BorderSide(
-            color: Color(0xFFD0D5DD),
-            width: 2.5,
-          ),
-          borderRadius: BorderRadius.circular(12),
-        ),
-        focusedBorder: OutlineInputBorder(
-          borderSide: const BorderSide(
-            color: Color(0xFFD0D5DD),
-            width: 2.5,
-          ),
-          borderRadius: BorderRadius.circular(12),
-        ),
-      ),
+      decoration: passwordInputDecoration,
     );
   }
 
   TextFormField buildEmailFormField() {
     return TextFormField(
       keyboardType: TextInputType.emailAddress,
-      decoration: InputDecoration(
-        hintText: "hello@example.com",
-        hintStyle: greyStyle,
-        border: OutlineInputBorder(
-          borderSide: const BorderSide(
-            color: Color(0xFFD0D5DD),
-            width: 2.5,
-          ),
-          borderRadius: BorderRadius.circular(12),
-        ),
-        enabledBorder: OutlineInputBorder(
-          borderSide: const BorderSide(
-            color: Color(0xFFD0D5DD),
-            width: 2.5,
-          ),
-          borderRadius: BorderRadius.circular(12),
-        ),
-        focusedBorder: OutlineInputBorder(
-          borderSide: const BorderSide(
-            color: Color(0xFFD0D5DD),
-            width: 2.5,
-          ),
-          borderRadius: BorderRadius.circular(12),
-        ),
-      ),
+      decoration: emailInputDecoration,
     );
   }
 }

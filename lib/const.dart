@@ -21,3 +21,37 @@ final greyStyle = TextStyle(
   color: const Color(0xFF928FA6),
   fontSize: getProportionateScreenWidth(20),
 );
+
+final emailInputDecoration = InputDecoration(
+  filled: true,
+  fillColor: Colors.white,
+  hintText: "hello@example.com",
+  hintStyle: greyStyle,
+  border: outlineInputBorder(),
+  enabledBorder: outlineInputBorder(),
+  focusedBorder: outlineInputBorder(),
+);
+
+OutlineInputBorder outlineInputBorder() {
+  return OutlineInputBorder(
+    borderSide: const BorderSide(
+      color: Color(0xFFD0D5DD),
+      width: 2.5,
+    ),
+    borderRadius: BorderRadius.circular(12),
+  );
+}
+
+final passwordInputDecoration = InputDecoration(
+  filled: true,
+  fillColor: Colors.white,
+  suffixIcon: const Icon(
+    Icons.visibility_off,
+    color: kDarkGreyColor,
+  ),
+  hintText: "*******",
+  hintStyle: greyStyle,
+  border: outlineInputBorder(),
+  enabledBorder: outlineInputBorder(),
+  focusedBorder: outlineInputBorder(),
+);

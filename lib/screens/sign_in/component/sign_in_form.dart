@@ -3,6 +3,7 @@ import 'package:kleeners/component/default_button.dart';
 import 'package:kleeners/const.dart';
 import 'package:kleeners/screens/sign_in/component/signin_with_text.dart';
 import 'package:kleeners/screens/sign_in/component/text_fields.dart';
+import 'package:kleeners/screens/sign_up/sign_up_screen.dart';
 
 import '../../../size_config.dart';
 import 'forgot_text.dart';
@@ -26,13 +27,11 @@ class SignInForm extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             // app logo
-            Image.asset(
-              'assets/images/logo.png',
-              height: getProportionateScreenHeight(300),
-              width: getProportionateScreenWidth(300),
-            ),
+            SizedBox(height: SizeConfig.screenWidth! * 0.1),
+            Image.asset('assets/images/new logo.png'),
 
             // email and phone number
+            SizedBox(height: getProportionateScreenWidth(20)),
             Row(
               children: [
                 Text(
@@ -83,10 +82,12 @@ class SignInForm extends StatelessWidget {
             const GoogleButton(),
 
             // create an account
-            SizedBox(height: getProportionateScreenWidth(25)),
+            SizedBox(height: getProportionateScreenWidth(35)),
             Center(
               child: GestureDetector(
-                onTap: () {},
+                onTap: () {
+                  Navigator.pushNamed(context, SignUpScreen.routeName);
+                },
                 child: Text(
                   "Create an Account",
                   style: TextStyle(
@@ -97,7 +98,7 @@ class SignInForm extends StatelessWidget {
                 ),
               ),
             ),
-            SizedBox(height: getProportionateScreenWidth(20)),
+            SizedBox(height: getProportionateScreenWidth(10)),
           ],
         ),
       ),

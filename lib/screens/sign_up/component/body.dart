@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'sign_in_form.dart';
+import 'package:kleeners/screens/sign_up/component/sign_up_form.dart';
 
 class Body extends StatelessWidget {
   const Body({super.key});
@@ -14,7 +14,7 @@ class Body extends StatelessWidget {
             bottom: 0,
             child: Image.asset('assets/images/background light.png'),
           ),
-          const SignInForm(),
+          const SignUpForm()
         ],
       ),
     );
