@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:kleeners/component/background_image.dart';
 import 'package:kleeners/screens/sign_up/component/sign_up_form.dart';
 
 class Body extends StatelessWidget {
@@ -6,15 +7,13 @@ class Body extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SafeArea(
+    return const SafeArea(
       child: Stack(
         fit: StackFit.expand,
         children: [
-          Positioned(
-            bottom: 0,
-            child: Image.asset('assets/images/background light.png'),
-          ),
-          const SignUpForm()
+          // background image
+          BackgroundImage(),
+          SignUpForm()
         ],
       ),
     );

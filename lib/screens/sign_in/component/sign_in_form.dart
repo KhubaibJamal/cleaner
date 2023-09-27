@@ -4,6 +4,7 @@ import 'package:kleeners/const.dart';
 import 'package:kleeners/screens/sign_in/component/signin_with_text.dart';
 import 'package:kleeners/screens/sign_in/component/text_fields.dart';
 import 'package:kleeners/screens/sign_up/sign_up_screen.dart';
+import 'package:kleeners/screens/start%20booking/start_booking_screen.dart';
 
 import '../../../size_config.dart';
 import 'forgot_text.dart';
@@ -28,7 +29,12 @@ class SignInForm extends StatelessWidget {
           children: [
             // app logo
             SizedBox(height: SizeConfig.screenWidth! * 0.1),
-            Image.asset('assets/images/new logo.png'),
+            Center(
+              child: Image.asset(
+                'assets/images/new logo.png',
+                scale: 1.5,
+              ),
+            ),
 
             // email and phone number
             SizedBox(height: getProportionateScreenWidth(20)),
@@ -71,7 +77,13 @@ class SignInForm extends StatelessWidget {
 
             // login button
             SizedBox(height: getProportionateScreenWidth(10)),
-            DefaultButton(text: "Login", press: () {}),
+            DefaultButton(
+              text: "Login",
+              press: () {
+                Navigator.pushReplacementNamed(
+                    context, StartBookingScreen.routeName);
+              },
+            ),
 
             // sign in with
             SizedBox(height: getProportionateScreenWidth(10)),
