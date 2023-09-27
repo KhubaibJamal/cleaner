@@ -27,6 +27,7 @@ class _BodyState extends State<Body> {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Stack(
+        fit: StackFit.expand,
         children: [
           Positioned(
             bottom: 0,
