@@ -4,6 +4,7 @@ import '../../../component/default_button.dart';
 import '../../../component/term_condition_text.dart';
 import '../../../const.dart';
 import '../../../size_config.dart';
+import '../../credit cards/credit_card_screen.dart';
 
 class MembershipForm extends StatefulWidget {
   const MembershipForm({super.key});
@@ -85,7 +86,9 @@ class _MembershipFormState extends State<MembershipForm> {
           DefaultButton(
             text: "Continue",
             bgColor: const Color(0xFF00A1FF),
-            press: () {},
+            press: () {
+              Navigator.pushNamed(context, CreditCardScreen.routeName);
+            },
           ),
           SizedBox(height: getProportionateScreenWidth(10)),
           const TermAndConditions(),
