@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:kleeners/screens/membership/membership_screen.dart';
 
 import '../../../component/default_button.dart';
 import '../../../const.dart';
@@ -49,7 +50,9 @@ class StartBooking extends StatelessWidget {
                   DefaultButton(
                     text: "Create Membership",
                     bgColor: kLightBlueColor,
-                    press: () {},
+                    press: () {
+                      Navigator.pushNamed(context, MembershipScreen.routeName);
+                    },
                   ),
                 ],
               ),

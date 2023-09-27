@@ -23,9 +23,36 @@ final greyStyle = TextStyle(
 );
 
 final emailInputDecoration = InputDecoration(
+  constraints: const BoxConstraints(maxHeight: 50),
   filled: true,
   fillColor: Colors.white,
   hintText: "hello@example.com",
+  hintStyle: greyStyle,
+  border: outlineInputBorder(),
+  enabledBorder: outlineInputBorder(),
+  focusedBorder: outlineInputBorder(),
+);
+
+final passwordInputDecoration = InputDecoration(
+  constraints: const BoxConstraints(maxHeight: 50),
+  filled: true,
+  fillColor: Colors.white,
+  suffixIcon: const Icon(
+    Icons.visibility_off,
+    color: kDarkGreyColor,
+  ),
+  hintText: "*******",
+  hintStyle: greyStyle,
+  border: outlineInputBorder(),
+  enabledBorder: outlineInputBorder(),
+  focusedBorder: outlineInputBorder(),
+);
+
+final phoneInputDecoration = InputDecoration(
+  constraints: const BoxConstraints(maxHeight: 50),
+  filled: true,
+  fillColor: Colors.white,
+  hintText: "00000000",
   hintStyle: greyStyle,
   border: outlineInputBorder(),
   enabledBorder: outlineInputBorder(),
@@ -41,17 +68,3 @@ OutlineInputBorder outlineInputBorder() {
     borderRadius: BorderRadius.circular(12),
   );
 }
-
-final passwordInputDecoration = InputDecoration(
-  filled: true,
-  fillColor: Colors.white,
-  suffixIcon: const Icon(
-    Icons.visibility_off,
-    color: kDarkGreyColor,
-  ),
-  hintText: "*******",
-  hintStyle: greyStyle,
-  border: outlineInputBorder(),
-  enabledBorder: outlineInputBorder(),
-  focusedBorder: outlineInputBorder(),
-);

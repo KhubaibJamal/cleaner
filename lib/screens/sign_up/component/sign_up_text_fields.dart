@@ -19,7 +19,10 @@ class SignUpTextField extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           // email address
-          Text("Email Address", style: headingStyle),
+          Text(
+            "Email Address",
+            style: headingStyle.copyWith(fontWeight: FontWeight.normal),
+          ),
           const SizedBox(height: 5),
           TextFormField(
             keyboardType: TextInputType.emailAddress,
@@ -28,24 +31,22 @@ class SignUpTextField extends StatelessWidget {
 
           // phone number
           SizedBox(height: getProportionateScreenWidth(10)),
-          Text("Phone Number", style: headingStyle),
+          Text(
+            "Phone Number",
+            style: headingStyle.copyWith(fontWeight: FontWeight.normal),
+          ),
           const SizedBox(height: 5),
           TextFormField(
             keyboardType: TextInputType.number,
-            decoration: InputDecoration(
-              filled: true,
-              fillColor: Colors.white,
-              hintText: "00000000",
-              hintStyle: greyStyle,
-              border: outlineInputBorder(),
-              enabledBorder: outlineInputBorder(),
-              focusedBorder: outlineInputBorder(),
-            ),
+            decoration: phoneInputDecoration,
           ),
 
           // password
           SizedBox(height: getProportionateScreenWidth(10)),
-          Text("Password", style: headingStyle),
+          Text(
+            "Password",
+            style: headingStyle.copyWith(fontWeight: FontWeight.normal),
+          ),
           const SizedBox(height: 5),
           TextFormField(
             obscureText: true,
@@ -54,7 +55,10 @@ class SignUpTextField extends StatelessWidget {
 
           // confirm password
           SizedBox(height: getProportionateScreenWidth(10)),
-          Text("Confirm Password", style: headingStyle),
+          Text(
+            "Confirm Password",
+            style: headingStyle.copyWith(fontWeight: FontWeight.normal),
+          ),
           const SizedBox(height: 5),
           TextFormField(
             obscureText: true,

@@ -15,7 +15,10 @@ class ForgotPassword extends StatelessWidget {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
-          Text("Password", style: headingStyle),
+          Text(
+            "Password",
+            style: headingStyle.copyWith(fontWeight: FontWeight.w500),
+          ),
           GestureDetector(
             onTap: () {},
             child: Text(

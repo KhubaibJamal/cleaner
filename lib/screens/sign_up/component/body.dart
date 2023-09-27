@@ -13,6 +13,7 @@ class Body extends StatelessWidget {
         children: [
           // background image
           BackgroundImage(),
+
           SignUpForm()
         ],
       ),

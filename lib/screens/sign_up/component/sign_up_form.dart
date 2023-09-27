@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:kleeners/component/default_button.dart';
 import 'package:kleeners/screens/sign_up/component/sign_up_text_fields.dart';
-import 'package:kleeners/screens/sign_up/component/term_condition_text.dart';
+import 'package:kleeners/component/term_condition_text.dart';
 import 'package:kleeners/screens/start%20booking/start_booking_screen.dart';
 
 import '../../../size_config.dart';
@@ -37,6 +37,7 @@ class _SignUpFormState extends State<SignUpForm> {
             ),
 
             // sign up form
+            SizedBox(height: SizeConfig.screenHeight! * 0.075),
             SignUpTextField(formKey: _formKey),
 
             // sign up button

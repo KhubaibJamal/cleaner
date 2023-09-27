@@ -62,7 +62,10 @@ class SignInForm extends StatelessWidget {
 
             // email address text
             SizedBox(height: getProportionateScreenWidth(15)),
-            Text("Email Address", style: headingStyle),
+            Text(
+              "Email Address",
+              style: headingStyle.copyWith(fontWeight: FontWeight.w500),
+            ),
 
             // text field
             SizedBox(height: getProportionateScreenWidth(8)),
