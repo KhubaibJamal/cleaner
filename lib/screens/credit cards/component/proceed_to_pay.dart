@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:kleeners/component/default_button.dart';
+import 'package:kleeners/screens/payment/payment_screen.dart';
 
 import '../../../const.dart';
 import '../../../size_config.dart';
@@ -44,7 +45,12 @@ class ProceedToPay extends StatelessWidget {
           ),
           SizedBox(
             width: SizeConfig.screenWidth! / 3,
-            child: DefaultButton(text: "Continue", press: () {}),
+            child: DefaultButton(
+              text: "Continue",
+              press: () {
+                Navigator.pushNamed(context, PaymentScreen.routeName);
+              },
+            ),
           ),
         ],
       ),
