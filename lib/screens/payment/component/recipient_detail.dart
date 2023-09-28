@@ -43,13 +43,13 @@ class RecipientText extends StatelessWidget {
           title,
           style: headingStyle.copyWith(
               color: const Color(0xFF2F2F2F),
-              fontSize: getProportionateScreenWidth(18)),
+              fontSize: getProportionateScreenWidth(15)),
         ),
         Text(
           subTitle,
           style: headingStyle.copyWith(
               color: const Color(0xFF2F2F2F),
-              fontSize: getProportionateScreenWidth(16)),
+              fontSize: getProportionateScreenWidth(15)),
         ),
       ],
     );

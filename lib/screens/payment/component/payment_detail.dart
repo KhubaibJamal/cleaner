@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:kleeners/screens/home/home_screen.dart';
 import 'package:kleeners/screens/payment/component/recipient_detail.dart';
 import 'package:kleeners/screens/payment/component/view_payment.dart';
 
@@ -66,7 +67,9 @@ class PaymentDetail extends StatelessWidget {
             child: DefaultButton(
               text: "Start Booking",
               bgColor: const Color(0xFF00A1FF),
-              press: () {},
+              press: () {
+                Navigator.pushReplacementNamed(context, HomeScreen.routeName);
+              },
             ),
           ),
         ],

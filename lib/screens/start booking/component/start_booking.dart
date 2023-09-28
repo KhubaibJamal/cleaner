@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:kleeners/screens/home/home_screen.dart';
 import 'package:kleeners/screens/membership/membership_screen.dart';
 
 import '../../../component/default_button.dart';
@@ -44,7 +45,9 @@ class StartBooking extends StatelessWidget {
                   DefaultButton(
                     text: "Already Member ?",
                     bgColor: kLightBlueColor,
-                    press: () {},
+                    press: () {
+                      Navigator.pushNamed(context, HomeScreen.routeName);
+                    },
                   ),
                   SizedBox(height: getProportionateScreenWidth(15)),
                   DefaultButton(
