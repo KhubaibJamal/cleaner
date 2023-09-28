@@ -8,7 +8,7 @@ class BackgroundImage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Positioned(
-      bottom: 0,
+      bottom: 20,
       child: Image.asset('assets/images/background light.png'),
     );
   }
